@@ -1,0 +1,1038 @@
+@font-face {
+    font-family: "GTWalsheimPro";
+    src: url("./fonts/GTWalsheimPro.otf") format("truetype");
+}
+
+@font-face {
+    font-family: "GTWalsheimPro-Black";
+    src: url("./fonts/GTWalsheimPro-Black.otf") format("truetype");
+}
+
+@font-face {
+    font-family: "GTWalsheimPro-Medium";
+    src: url("./fonts/GTWalsheimPro-Medium.otf") format("truetype");
+}
+
+@font-face {
+    font-family: "GTWalsheimPro-Bold";
+    src: url("./fonts/GTWalsheimPro-Bold.otf") format("truetype");
+}
+@font-face {
+    font-family: "PFBeauSansPro-Bbook";
+    src: url("./fonts/PFBeauSansPro-Bbook.ttf") format("truetype");
+}
+@font-face {
+    font-family: "EncodeSansNarrow-Bold";
+    src: url("./fonts/EncodeSansNarrow-Bold.ttf") format("truetype");
+}
+
+* {
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    font-family: 'GTWalsheimPro';
+    -webkit-font-smoothing: antialiased;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #000;
+    text-decoration: none;
+}
+.portrait-crop{
+    display: inline-block;
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+}
+.portrait-crop img {
+    width: 100%;
+}
+.font-medium{
+    font-family: "GTWalsheimPro-Medium";
+}
+/* .project-bazaar img {
+    opacity: 1;
+    transition: opacity 0.3s;
+}
+
+.project-bazaar img[data-src] {
+    opacity: 0;
+} */
+
+.block-nav {
+    font-family: inherit;
+    padding: 32px 165px 0;
+    font-size: 20px;
+    max-width: 1440px;
+    margin: 0 auto;
+    font-weight: 500;
+}
+
+.nav-flex {
+    display: flex;
+    align-items: center;
+}
+
+.el-nav-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.el-hr {
+    background: #E9EFF4;
+    height: 1px;
+    width: 100%;
+}
+
+.mx-88 {
+    margin: 88px 0 120px;
+}
+.mx-resume{
+    margin: 60px 0 72px;
+}
+.mx-64 {
+    margin: 62px 0 120px;
+}
+.mx-120 {
+    margin: 120px 0;
+}
+
+.mx-24 {
+    font-family: "GTWalsheimPro-Medium";
+    margin: 0 24px;
+    font-size: 18px;
+}
+
+.mx-pad {
+    margin: 0 24px;
+}
+
+.pd-footer {
+    padding: 40px 165px 64px;
+}
+
+a.el-href-bb {
+    font-family: "GTWalsheimPro-Medium";
+    position: relative;
+    color: #000!important;
+    cursor: pointer;
+    line-height: 1;
+    text-decoration: none!important;
+}
+
+a.el-href-bb:after {
+    display: block;
+    position: absolute;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: #000;
+    content: "";
+    -webkit-transition: width .3s ease-in-out;
+    -moz--transition: width .3s ease-in-out;
+    transition: width .3s ease-in-out;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+a.el-href-bb:hover::after, a.el-href-bb:focus::after {
+    width: 100%;
+    text-decoration: none!important;
+}
+
+a:hover:after, a:focus:after {
+    width: 100%;
+    text-decoration: none!important;
+    /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
+}
+
+.block-title-text {
+    font-size: 72px;
+    font-family: "GTWalsheimPro-Bold";
+    line-height: 1.3em;
+}
+
+.block-content {
+    padding: 156px 165px 160px;
+}
+
+.block-preview {
+    padding: 0;
+    position: relative;
+    height: 520px;
+    margin: 144px 0 0;
+}
+
+.bp-f {
+    margin: 120px 0 0;
+}
+
+.el-block-preview {
+    position: absolute;
+    width: 350px;
+    height: 420px;
+    background: rgb(66, 161, 255);
+    color: #fff;
+    font-size: 18px;
+    top: -40px;
+    padding: 30px 32px;
+}
+
+.el-block-img {
+    width: 100%;
+    height: 520px;
+    ;
+}
+
+.right {
+    right: 95px;
+}
+
+.left {
+    left: 95px;
+}
+
+.el-bp-title {
+    font-family: "GTWalsheimPro-Bold";
+    font-size: 24px;
+}
+
+.el-bp-date {
+    font-family: "GTWalsheimPro-Medium";
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.el-bp-text {
+    font-family: "GTWalsheimPro-Medium";
+    font-size: 18px;
+    line-height: 28px;
+    margin-top: 14px;
+}
+
+.el-bp-link {
+    font-size: 17px;
+    color: #fff;
+}
+
+.el-bp-link:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+.span-name {
+    color: rgb(66, 161, 255);
+}
+
+.img-hi {
+    width: 64px;
+    height: 72px;
+    vertical-align: baseline;
+}
+
+.mxt-160 {
+    margin: 160px auto 0;
+}
+
+.el-block-href-title {
+    /* padding: 120px 0 0; */
+    font-size: 64px;
+    font-family: "GTWalsheimPro-Bold";
+    color: #000;
+    display: flex;
+    justify-content: center;
+}
+
+.el-block-href-link {
+    font-family: "GTWalsheimPro-Medium";
+    padding: 64px 12px 0;
+    display: flex;
+}
+
+.el-bh-link-style a {
+    font-size: 20px;
+    color: #42a1ff;
+    text-decoration: underline;
+}
+
+.el-bh-link-style a:hover {
+    font-size: 20px;
+    color: #0080ff;
+    text-decoration: underline;
+}
+
+.el-bh-link-style span {
+    font-family: "GTWalsheimPro-Bold";
+    font-size: 24px;
+    color: #000;
+}
+
+.el-block-img-mobile {
+    display: none;
+}
+
+.arrow-move {
+    /* display: inline-flex; */
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.move:hover .arrow-move {
+    -webkit-transform: translate(40%, 0);
+    -ms-transform: translate(40%, 0);
+    transform: translate(40%, 0);
+}
+.arrow-move.resume {
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.move.resume:hover .arrow-move.resume {
+    -webkit-transform: translate(-40%, 0);
+    -ms-transform: translate(-40%, 0);
+    transform: translate(-40%, 0);
+}
+
+/* resume */
+
+.resume-title {
+    font-family: "GTWalsheimPro-Bold";
+    font-size: 64px;
+    padding: 0 0 72px;
+}
+
+.resume-page .block-content {
+    padding: 64px 165px 160px;
+}
+
+.res-block-text {
+    padding: 20px 125px 0 0;
+}
+
+.res-text {
+    font-family: "GTWalsheimPro";
+    font-size: 20px;
+    padding: 0 0 20px;
+    margin: 0;
+    line-height: 1.6;
+}
+
+.res-el-title-head {
+    font-family: "GTWalsheimPro-Bold";
+    font-size: 24px;
+    color: rgb(66, 161, 255);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    /* padding: 72px 0 24px; */
+    padding: 0 0 24px;
+}
+
+.res-el-sitebar-menu-title {
+    font-family: "GTWalsheimPro-Bold";
+    font-size: 22px;
+    line-height: 24px;
+}
+
+.res-el-sitebar-menu-list {
+    font-family: "GTWalsheimPro";
+    font-size: 18px;
+    line-height: 20px;
+}
+
+.res-el-sitebar-menu-list ul {
+    list-style: none;
+    margin: 0;
+    padding: 12px 0 0;
+}
+
+.res-el-sitebar-menu-list ul li {
+    padding: 0 0 12px;
+}
+
+button.btn-download {
+    font-family: "GTWalsheimPro-Medium";
+    background-color: rgba(66, 161, 255, .2);
+    padding: 22px 20px 23px;
+    border: 0;
+    font-size: 18px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.56;
+    letter-spacing: normal;
+    color: #42a1ff;
+    text-decoration: underline;
+}
+
+button.btn-download:hover {
+    color: rgb(66, 161, 255);
+    text-decoration: none;
+}
+
+.res-el-title-content {
+    font-size: 22px;
+    line-height: 24px;
+}
+
+.el-col-1 {
+    font-family: "GTWalsheimPro-Bold";
+    color: #000;
+}
+
+.el-col-2 {
+    font-family: "GTWalsheimPro";
+    color: rgb(159, 159, 159)
+}
+
+.res-el-date-content {
+    font-size: 16px;
+    line-height: 18px;
+    color: rgb(159, 159, 159);
+    padding: 10px 0 12px;
+}
+
+.res-el-list-content {
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.res-el-list-content ul {
+    margin: 0;
+    padding: 0;
+}
+
+.res-el-list-content ul li {
+    list-style: none;
+    color: #3c3c3c;
+    display: inline-block;
+    list-style: none;
+    margin: 0 0 8px 0;
+    padding: 0;
+    position: relative;
+}
+
+.res-el-list-content ul li::before {
+    color: rgb(159, 159, 159);
+    content: "\2022";
+    display: inline-block;
+    font-size: 1em;
+    left: -14px;
+    position: absolute;
+    top: 0em;
+}
+
+.res-block-desc {
+    margin-bottom: 58px;
+}
+
+.res-el-sitebar-block {
+    margin: 48px 0 0 0;
+}
+
+.img-arrow {
+    vertical-align: inherit;
+    margin-right: 12px;
+}
+
+.block-preview:hover .arrow-move {
+    -webkit-transform: translate(40%, 0);
+    -ms-transform: translate(40%, 0);
+    transform: translate(40%, 0);
+}
+
+.fb {
+    vertical-align: -webkit-baseline-middle;
+}
+
+.db {
+    vertical-align: -webkit-baseline-middle;
+}
+
+.fb:hover svg path {
+    fill: #27ABEC;
+}
+
+.db:hover svg path {
+    fill: #F6387F;
+}
+
+/* Project bazzar */
+
+.project-bazaar .resume-title {
+    padding: 64px 165px 72px;
+}
+
+/* .project-bazaar .container {
+    padding: 0;
+} */
+
+/* .globe {
+    background: url("./img/bazzar/bg-globe.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: #030c1a;
+    background-size: contain;
+} */
+
+.globe img {
+    display: flex;
+    margin: 60px auto 50px;
+}
+
+.globe-text {
+    background-color: #030c1a;
+}
+
+.globe-text p {
+    font-family: "PFBeauSansPro-Bbook";
+    font-size: 18px;
+    line-height: 1.78;
+    text-align: center;
+    color: #697490;
+    padding: 0 355px 80px;
+}
+
+.globe-logo {
+    display: flex;
+    margin: 0 auto 32px;
+}
+
+.globe-mac {
+    display: flex;
+    margin: 0 auto 104px;
+}
+
+.desc-lw {
+    background-color: #f7f9fc;
+}
+
+.desc-lw-img {
+    display: flex;
+    margin: 104px auto;
+}
+
+.desc-lw-img2 {
+    display: flex;
+    margin: 96px auto 104px;
+}
+
+.desc-w-d-img2 {
+    display: flex;
+    margin: 24px auto 160px;
+}
+
+.desc-w {
+    background-color: #fff;
+}
+
+.desc-w-d {
+    background-color: #030c1a;
+}
+
+.desc-w-title {
+    font-family: "EncodeSansNarrow-Bold";
+    font-size: 32px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #697490;
+    text-align: center;
+    margin: 80px 0 0 16px;
+}
+
+.desc-w-mtext {
+    font-family: "PFBeauSansPro-Bbook";
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #697490;
+    margin-bottom: 48px;
+}
+
+.desc-w-title-d {
+    font-family: "EncodeSansNarrow-Bold";
+    font-size: 32px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #ffffff;
+    text-align: center;
+    margin: 80px 0 0 16px;
+}
+
+.desc-w-mtext-d {
+    font-family: "PFBeauSansPro-Bbook";
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #697490;
+    margin-bottom: 48px;
+}
+
+.add-peers1 {
+    float: left;
+    margin-left: 165px;
+}
+
+.add-peers2 {
+    margin: -340px 0 96px 210px;
+}
+
+.block-img {
+    padding: 0 80px 48px;
+}
+
+.block-img img {
+    margin: 0 15px;
+}
+
+/* .bg-team {
+    background: url(./img/bazzar/bg-team.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+} */
+
+.title-team {
+    font-family: "EncodeSansNarrow-Bold";
+    font-size: 32px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #ffffff;
+    margin: 0px auto;
+    padding-top: 80px;
+    text-align: center;
+}
+
+.bg-team .text-team {
+    font-family: "PFBeauSansPro-Bbook";
+    font-size: 21px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #697490;
+    margin-right: 58px;
+    text-align: left;
+}
+
+.bg-team .text-team:last-child {
+    margin-right: 0;
+}
+
+.bg-team .text-link-team a {
+    font-family: "PFBeauSansPro-Bbook";
+    font-size: 24px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #42a1ff;
+    text-decoration: underline;
+}
+
+.bg-team .list {
+    display: flex;
+    justify-content: center;
+    padding: 56px 234px 88px;
+    /* padding: 56px 134px 88px; */
+}
+
+.bg-team .list-f {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 234px 85px;
+    /* padding: 0px 134px 85px; */
+}
+
+.bg-team ul {
+    padding: 0;
+    margin: 0;
+}
+
+.bg-team ul li {
+    padding-bottom: 24px;
+    list-style: none;
+}
+
+.bg-team-btn {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(66, 161, 255, .2);
+    font-family: "GTWalsheimPro";
+    padding: 22px 32px 23px;
+    border: 0;
+    font-size: 18px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.56;
+    letter-spacing: normal;
+    color: #42a1ff;
+    text-decoration: underline;
+    margin-bottom: 64px;
+    cursor: pointer;
+    width:160px;
+}
+.bg-team-btn:hover {
+    color: #42a1ff;
+    text-decoration: none;
+}
+.bg-team-btn:focus {
+    outline: 0;
+}
+.possvg{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.posrel{
+    position: relative;
+    padding: 0px 0 205px;
+}
+.absleft{
+position: absolute;
+top: 0;
+left: 102px;
+}
+.absright{
+position: absolute;
+top: 0;
+right: 102px;
+}
+.project-bazaar .el-block-href-title {
+    margin-top: 120px
+}
+
+.project-bazaar .el-block-href-link {
+    padding: 64px 165px 160px;
+
+}
+
+.img-center {
+    text-align: center;
+}
+
+.project-bazaar .row {
+    margin-right: 0px;
+    margin-left: 0px;
+}
+.imgportrait{
+    width: 350px;
+    height: 320px;
+}
+.imgportrait-mob{
+    display: none;
+}
+.boxshadow{
+    box-shadow: 0 0 20px 0 #d4d9e3;
+}
+/* .container-pb {
+    max-width: 1440px;
+} */
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1440px;
+    }
+}
+@media (min-width: 1450px) {
+   body .project-bazaar .container {
+    max-width: 100%;
+   }
+   .project-bazaar .resume-title {
+    padding: 64px 165px 72px;
+    max-width: 1440px;
+    margin: 0 auto;
+    }
+    .project-bazaar .globe-text p {
+        max-width: 1440px;
+        margin: 0 auto;
+    }
+    .project-bazaar .img-center {
+        margin: 0 auto;
+        max-width: 1440px;
+    }
+    .project-bazaar .absright {
+        right: 148px;
+    }
+    .project-bazaar .absleft {
+        left: 146px;
+    }
+    .project-bazaar .bg-team .list{
+        justify-content: space-between;
+        margin: 0 auto;
+        max-width: 1440px;
+    }
+    .project-bazaar .row .el-block-href-link {
+        max-width: 1440px;
+        margin: 0 auto;
+    }
+    .project-bazaar .el-block-href-link {
+        max-width: 1440px;
+        margin: 0 auto!important;
+        
+    }
+    .project-bazaar .bg-team .list-f {
+        max-width: 1440px;
+        margin: 0 auto;
+        
+    }
+    
+}
+/* Small devices (landscape phones, 576px and up) */
+
+@media (max-width: 768px) {
+    body {
+        margin: 0 15px;
+    }
+    .portrait-crop{
+        display: inline-block;
+        height: 272px;
+        width: 100%;
+        overflow: hidden;
+        order: 2;
+    }
+    .imgportrait{
+        display: none;
+    }
+    .imgportrait-mob{
+        display: flex;
+        width: 100%;
+    }
+
+    .imgportrait{
+        width: 290px;
+        height: 272px;
+    }
+    .mx-resume {
+        margin: 40px 0;
+    }
+    .logo-headersize{
+        width: 48px!important;
+        height: 48px!important;
+    }
+    .logo-footersize{
+        width: 40px!important;
+        height: 40px!important;
+    }
+    .block-nav {
+        padding: 32px 0 40px;
+        font-size: 18px;
+        flex-wrap: nowrap;
+    }
+    .block-content {
+        padding: 0;
+    }
+    .navbar-nav {
+        flex-direction: row;
+    }
+    .mx-24 {
+        display: none;
+    }
+    .block-title-text {
+        font-size: 40px;
+        line-height: 56px;
+    }
+    .mxt-160 {
+        margin: 40px auto;
+    }
+    .bp-f {
+        margin: 0 0 64px!important;
+    }
+    .block-preview {
+        margin: 40px 0 0;
+        height: auto;
+        display: flex;
+        flex-flow: wrap;
+    }
+    .el-block-href-title {
+        padding: 0 0 24px;
+        font-size: 32px;
+    }
+    /* .el-hr{
+        margin: 0px 15px;
+    } */
+    .el-block-href-link {
+        /* padding: 0 10px; */
+        padding: 0;
+    }
+    .el-bh-link-style a {
+        font-size: 18px;
+        text-decoration: underline;
+    }
+    .el-bh-link-style span {
+        font-family: "GTWalsheimPro-Bold";
+        font-size: 22px;
+    }
+    .mx-sm {
+        margin-left: 6px!important;
+        margin-right: 6px!important;
+    }
+    .el-block-img {
+        height: auto;
+    }
+    .el-block-preview {
+        position: initial;
+        padding: 32px 24px;
+        width: 290px;
+        height: 272px;
+        order: 1;
+    }
+    .img-hi {
+        width: 48px;
+        height: auto;
+    }
+    .mx-88 {
+        margin: 40px 0;
+    }
+    .mx-64 {
+        margin: 64px 0 40px;
+    }
+    .mx-120 {
+        margin: 0 0 40px;
+    }
+    .el-bh-link-style {
+        margin: 0 0 24px;
+    }
+    .el-bh-link-style:last-child {
+        margin: 0 0 40px;
+    }
+    .pd-footer {
+        padding: 40px 0 56px;
+    }
+    .py-015 {
+        padding: 0 15px;
+    }
+    .el-block-img {
+        display: none;
+    }
+    .el-block-img-mobile {
+        display: block;
+        /* width: 288px; */
+        /* width: 100%;
+        height: 270px;
+        order: 2; */
+    }
+    .el-bp-text {
+        font-size: 18px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 5;
+        line-height: 28px;
+    }
+    .el-bp-link {
+        display: none;
+    }
+    /* resume */
+    .resume-page .block-content {
+        padding: 0px;
+    }
+    .resume-title {
+        font-family: "GTWalsheimPro-Bold";
+        font-size: 32px;
+        padding: 0 0 40px;
+    }
+    .res-block-text {
+        padding: 0;
+    }
+    .res-text {
+        font-family: "GTWalsheimPro";
+        font-size: 18px;
+        line-height: 1.56;
+        padding: 0 0 24px;
+        margin: 0;
+    }
+    .mb-order {
+        order: 2;
+    }
+    .res-el-title-content {
+        font-size: 18px;
+    }
+    .res-el-list-content ul li::before {
+        display: none;
+    }
+    .res-el-date-content {
+        font-size: 14px;
+    }
+    .res-el-list-content ul li {
+        font-size: 16px;
+        margin: 0px 0 12px 0;
+    }
+    .res-block-desc {
+        margin-bottom: 24px;
+    }
+    .res-block-desc:last-child {
+        margin-bottom: 40px;
+    }
+    .res-el-sitebar-block {
+        margin: 24px 0 0 0;
+    }
+    .btn-download {
+        width: 100%!important;
+        /* padding: 12px 20px 17px!important;
+        display: block!important;
+        text-align: center!important; */
+    }
+    .btn-download a {
+        height: 56px!important;
+        text-align: center;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+    .mx-pad {
+        margin: 0 16px;
+    }
+    .mx-pad-r {
+        margin: 0 16px;
+    }
+    .img-arrow {
+        display: none;
+    }
+    .link-mb {
+        display: contents;
+    }
+    .link-mb:hover {
+        text-decoration: none;
+    }
+    .res-el-sitebar-menu-list ul li {
+        font-size: 16px;
+        line-height: 1.25;
+    }
+    .res-el-sitebar-menu-title {
+        font-family: "GTWalsheimPro-Bold";
+        font-size: 18px;
+        line-height: 28px;
+    }
+    .arrow-move.resume{
+        display: none;
+    }
+}
